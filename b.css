@@ -1,0 +1,23 @@
+.classroom {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+.seat {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+.seat:hover {
+    background-color: #e0e0e0;
+}
+.selected {
+    background-color: #a0e0a0; /* 선택된 자리를 녹색으로 표시 */
+}
+.occupied {
+    background-color: #e0a0a0; /* 이미 선점된 자리를 빨간색으로 표시 */
+    cursor: not-allowed;
+}
